@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive Quran courses including Noorania Qaida, Tajweed, Hifz Memorization, Tafseer, Hadith Studies, Arabic Language, and Islamic Studies. Expert online tutors for all levels.">
+    <meta name="keywords" content="quran courses, noorania qaida, tajweed course, hifz program, quran memorization, tafseer, hadith studies, arabic language course">
+    <title>Our Quran Courses | Education For Muslims</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div id="registration-popup" class="popup-overlay">
+        <div class="popup-content" data-aos="zoom-in">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-header">
+                <img src="images/logo.png" alt="Education For Muslims" class="popup-logo">
+                <h2>Start Your Quran Journey Today</h2>
+                <p>Join thousands of students learning worldwide</p>
+            </div>
+            <form id="popup-form" class="popup-form">
+                <div class="form-group">
+                    <input type="text" id="popup-name" placeholder="Full Name *" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="popup-email" placeholder="Email Address *" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="popup-phone" placeholder="Phone Number *" required>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group">
+                    <select id="popup-course" required>
+                        <option value="">Select Course *</option>
+                        <option value="noorania">Basic Noorania Qaida</option>
+                        <option value="reading">Quran Reading</option>
+                        <option value="tajweed">Quran with Tajweed</option>
+                        <option value="memorization">Quran Memorization (Hifz)</option>
+                        <option value="tafseer">Quran Translation & Tafseer</option>
+                        <option value="hadith">Hadith Studies</option>
+                        <option value="arabic">Arabic Language</option>
+                        <option value="islamic-studies">Islamic Studies</option>
+                    </select>
+                    <i class="fas fa-book-quran"></i>
+                </div>
+                <button type="submit" class="btn-primary">Get FREE Trial Class</button>
+                <p class="popup-note">No credit card required. Start learning today!</p>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Education For Muslims">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="arabic-accent">دورات القرآن الكريم</h1>
+                <h2>Our Quran Courses</h2>
+                <p>Discover our comprehensive range of Islamic education programs, designed to guide you through every aspect of Quranic learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Programs</h2>
+                <p>Choose from our most popular courses designed for all learning levels</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_516b40b9.jpg" alt="Basic Noorania Qaida">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Basic Noorania Qaida</h3>
+                        <p>Master Arabic alphabets, pronunciation, and reading fluency with expert guidance and interactive lessons. Perfect foundation for beginners.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Arabic Alphabet Recognition</li>
+                            <li><i class="fas fa-check"></i> Pronunciation Practice</li>
+                            <li><i class="fas fa-check"></i> Reading Fluency</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3-4 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="course-image">
+                        <img src="images/muslim_student_readi_6002a467.jpg" alt="Online Quran Reading">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Online Quran Reading</h3>
+                        <p>Learn to read the Quran with clarity and confidence through certified teachers and interactive lessons using proven methodologies.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Certified Teachers</li>
+                            <li><i class="fas fa-check"></i> Interactive Lessons</li>
+                            <li><i class="fas fa-check"></i> Step-by-step Approach</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4-6 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Beginner to Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_f055af00.jpg" alt="Quran With Tajweed">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Quran With Tajweed</h3>
+                        <p>Perfect your Quranic recitation with proper Tajweed rules, real-time feedback, and expert instruction for beautiful recitation.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Tailored Lessons</li>
+                            <li><i class="fas fa-check"></i> Real-time Feedback</li>
+                            <li><i class="fas fa-check"></i> Expert Instructors</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 6-8 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_6f2fb003.jpg" alt="Quran Translation & Tafseer">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Quran Translation & Tafseer</h3>
+                        <p>Understand the meaning and interpretation of the Holy Quran with comprehensive translation and Tafseer studies from authentic sources.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Verse Translation</li>
+                            <li><i class="fas fa-check"></i> Detailed Tafseer</li>
+                            <li><i class="fas fa-check"></i> Historical Context</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 8-12 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Intermediate to Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="images/muslim_student_readi_93381ba3.jpg" alt="Online Quran Memorization">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Online Quran Memorization (Hifz)</h3>
+                        <p>Systematic approach to Quran memorization with proven techniques for spiritual and intellectual growth. Become a Hafiz/Hafiza.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Memorization Techniques</li>
+                            <li><i class="fas fa-check"></i> Spiritual Growth</li>
+                            <li><i class="fas fa-check"></i> Mental Discipline</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 12-24 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="course-image">
+                        <img src="images/islamic_geometric_pa_6b18fe46.jpg" alt="Hadith Studies">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Hadith Studies</h3>
+                        <p>Study the authentic sayings and actions of Prophet Muhammad (peace be upon him) for comprehensive Islamic understanding and guidance.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Authentic Hadith Collections</li>
+                            <li><i class="fas fa-check"></i> Prophet's Sayings</li>
+                            <li><i class="fas fa-check"></i> Practical Applications</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 6-9 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-image">
+                        <img src="images/islamic_geometric_pa_807f1ad8.jpg" alt="Namaz & Kalimas">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Namaz & Kalimas</h3>
+                        <p>Master the Islamic prayers and essential declarations with proper guidance and spiritual understanding. Perfect for beginners and converts.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Prayer Techniques</li>
+                            <li><i class="fas fa-check"></i> Spiritual Connection</li>
+                            <li><i class="fas fa-check"></i> Essential Declarations</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 2-3 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="course-image">
+                        <img src="images/beautiful_islamic_mo_70d921d7.jpg" alt="Islamic History">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Islamic History</h3>
+                        <p>Explore the rich heritage of Islamic civilization and learn valuable lessons from Islamic history, prophets, and great scholars.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Historical Lessons</li>
+                            <li><i class="fas fa-check"></i> Islamic Civilization</li>
+                            <li><i class="fas fa-check"></i> Prophet's Life (Seerah)</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4-6 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_516b40b9.jpg" alt="Arabic Language">
+                        <div class="course-overlay">
+                            <a href="#" class="btn-view" onclick="openPopup(); return false;">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Arabic Language</h3>
+                        <p>Master the Arabic language to better understand the Quran and Islamic texts with comprehensive language training and grammar.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Arabic Grammar</li>
+                            <li><i class="fas fa-check"></i> Vocabulary Building</li>
+                            <li><i class="fas fa-check"></i> Reading & Writing Skills</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 8-12 Months</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-levels">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Learning Levels</h2>
+                <p>Find the perfect starting point for your Quran journey</p>
+            </div>
+            <div class="levels-grid">
+                <div class="level-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="level-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Perfect for those starting their Quran journey. Learn Arabic alphabet, basic pronunciation, and simple recitation.</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> Arabic Alphabet</li>
+                        <li><i class="fas fa-check"></i> Basic Pronunciation</li>
+                        <li><i class="fas fa-check"></i> Simple Words</li>
+                        <li><i class="fas fa-check"></i> Short Surahs</li>
+                    </ul>
+                </div>
+                <div class="level-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="level-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>For those with basic knowledge. Improve recitation, learn Tajweed rules, and memorize more chapters of the Quran.</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> Tajweed Rules</li>
+                        <li><i class="fas fa-check"></i> Better Recitation</li>
+                        <li><i class="fas fa-check"></i> Medium Surahs</li>
+                        <li><i class="fas fa-check"></i> Arabic Grammar</li>
+                    </ul>
+                </div>
+                <div class="level-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="level-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>For experienced learners. Master complex Tajweed, memorize large portions, and study advanced Islamic sciences.</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> Advanced Tajweed</li>
+                        <li><i class="fas fa-check"></i> Long Surahs</li>
+                        <li><i class="fas fa-check"></i> Hifz Program</li>
+                        <li><i class="fas fa-check"></i> Islamic Studies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Begin Your Quran Journey?</h2>
+                <p>Join thousands of students worldwide who are learning the Holy Quran with our expert tutors. Start your spiritual journey today!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Start Learning Now</a>
+                    <a href="contact.html" class="btn-secondary btn-large">Get More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/logo.png" alt="Education For Muslims" class="footer-logo">
+                    <p>Dedicated to providing quality Islamic education through modern technology, connecting students with expert tutors worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Noorania Qaida</a></li>
+                        <li><a href="courses.html">Quran Reading</a></li>
+                        <li><a href="courses.html">Tajweed</a></li>
+                        <li><a href="courses.html">Quran Memorization</a></li>
+                        <li><a href="courses.html">Arabic Language</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

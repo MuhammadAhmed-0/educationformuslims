@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Education For Muslims for Quran learning enrollment. Get in touch via phone, email, or our contact form. Free trial classes available. 24/7 support.">
+    <meta name="keywords"
+        content="contact us, quran academy contact, enroll now, free trial, quran learning inquiry, get in touch">
+    <title>Contact Us | Education For Muslims</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+    <div id="registration-popup" class="popup-overlay">
+        <div class="popup-content" data-aos="zoom-in">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-header">
+                <img src="images/logo.png" alt="Education For Muslims" class="popup-logo">
+                <h2>Start Your Quran Journey Today</h2>
+                <p>Join thousands of students learning worldwide</p>
+            </div>
+            <form id="popup-form" class="popup-form">
+                <div class="form-group">
+                    <input type="text" id="popup-name" placeholder="Full Name *" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="popup-email" placeholder="Email Address *" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="popup-phone" placeholder="Phone Number *" required>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group">
+                    <select id="popup-course" required>
+                        <option value="">Select Course *</option>
+                        <option value="noorania">Basic Noorania Qaida</option>
+                        <option value="reading">Quran Reading</option>
+                        <option value="tajweed">Quran with Tajweed</option>
+                        <option value="memorization">Quran Memorization (Hifz)</option>
+                        <option value="tafseer">Quran Translation & Tafseer</option>
+                        <option value="hadith">Hadith Studies</option>
+                        <option value="arabic">Arabic Language</option>
+                        <option value="islamic-studies">Islamic Studies</option>
+                    </select>
+                    <i class="fas fa-book-quran"></i>
+                </div>
+                <button type="submit" class="btn-primary">Get FREE Trial Class</button>
+                <p class="popup-note">No credit card required. Start learning today!</p>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Education For Muslims">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="arabic-accent">تواصل معنا</h1>
+                <h2>Contact Us</h2>
+                <p>Ready to begin your Quran journey? Get in touch with us for enrollment, course information, or any
+                    questions about our programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get Started Today</h2>
+                <p>Join thousands of students learning the Holy Quran with our expert tutors</p>
+            </div>
+            <div class="contact-info-grid">
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p class="info-detail">+1 (555) 123-4567</p>
+                    <p class="info-time">Mon-Sun: 24/7 Available</p>
+                </div>
+                <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p class="info-detail">info@educationformuslims.com</p>
+                    <p class="info-time">We respond within 24 hours</p>
+                </div>
+                <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="info-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Free Trial</h3>
+                    <p class="info-detail">Book a 30-minute session</p>
+                    <p class="info-time">Experience our teaching quality</p>
+                </div>
+                <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Schedule</h3>
+                    <p class="info-detail">Learn at your own pace</p>
+                    <p class="info-time">Available 24/7 online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content" data-aos="fade-right">
+                    <h2>Enroll Now</h2>
+                    <p class="lead">Fill out the form and we'll contact you within 24 hours to schedule your FREE trial
+                        class</p>
+                    <div class="why-choose-list">
+                        <div class="why-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certified Islamic scholars</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-user"></i>
+                            <span>One-on-one personalized learning</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Flexible scheduling</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Free trial classes</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Progress tracking</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 student support</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+<form id="contact-form" class="contact-form">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="UAE">UAE</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="age">Age Group</label>
+            <select id="age" name="age">
+                <option value="">Select Age Group</option>
+                <option value="5-12">5-12 years</option>
+                <option value="13-17">13-17 years</option>
+                <option value="18-25">18-25 years</option>
+                <option value="26-35">26-35 years</option>
+                <option value="36-50">36-50 years</option>
+                <option value="50+">50+ years</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="course">Course Interest *</label>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Quran Reading">Quran Reading</option>
+            <option value="Tajweed">Tajweed</option>
+            <option value="Hifz">Hifz Memorization</option>
+            <option value="Arabic">Arabic Language</option>
+            <option value="Islamic Studies">Islamic Studies</option>
+            <option value="Not Sure">Not Sure</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="level">Current Level</label>
+        <select id="level" name="level">
+            <option value="">Select Your Level</option>
+            <option value="Beginner">Beginner (No prior knowledge)</option>
+            <option value="Basic">Basic (Know Arabic alphabet)</option>
+            <option value="Intermediate">Intermediate (Can read Quran)</option>
+            <option value="Advanced">Advanced (Know Tajweed)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="schedule">Preferred Schedule</label>
+        <select id="schedule" name="schedule">
+            <option value="">Select Schedule</option>
+            <option value="Morning">Morning (6AM-12PM)</option>
+            <option value="Afternoon">Afternoon (12PM-6PM)</option>
+            <option value="Evening">Evening (6PM-12AM)</option>
+            <option value="Flexible">Flexible</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to our newsletter for Islamic education updates</label>
+    </div>
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#">Terms and Conditions</a> *</label>
+    </div>
+    <button type="submit" class="btn-primary btn-large">Send Message</button>
+</form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our Quran learning programs</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>How do online Quran classes work?</h3>
+                    </div>
+                    <p class="faq-answer">Our online classes are conducted via video calls with certified tutors using
+                        platforms like Zoom, Google Meet, or Microsoft Teams. You'll receive one-on-one instruction,
+                        just like in-person classes, with the convenience of learning from home. All you need is a
+                        device with internet connection, camera, and microphone.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Do I need any prior knowledge to start?</h3>
+                    </div>
+                    <p class="faq-answer">No prior knowledge is required! We have courses for complete beginners,
+                        starting with the Arabic alphabet and basic pronunciation. Our tutors will assess your current
+                        level and create a personalized learning plan tailored to your needs.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>What equipment do I need for online classes?</h3>
+                    </div>
+                    <p class="faq-answer">You only need a computer, tablet, or smartphone with internet connection, a
+                        camera, and microphone. We'll guide you through the setup process during your trial class to
+                        ensure everything works smoothly.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Can I choose my own schedule?</h3>
+                    </div>
+                    <p class="faq-answer">Yes! We offer flexible scheduling to accommodate your availability. You can
+                        choose your preferred days and times for classes. Our tutors are available 24/7 to match
+                        students from different time zones around the world.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Is there a free trial available?</h3>
+                    </div>
+                    <p class="faq-answer">Yes, we offer a FREE 30-minute trial session so you can experience our
+                        teaching quality before committing to a course. No credit card required! Simply fill out the
+                        enrollment form and we'll schedule your trial class.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>What if I miss a class?</h3>
+                    </div>
+                    <p class="faq-answer">We understand that life happens. You can reschedule missed classes with
+                        advance notice, and we'll work with you to find alternative times. Our flexible rescheduling
+                        policy ensures you never lose your paid lessons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your Quran Journey?</h2>
+                <p>Join our community of learners and begin your spiritual education today with a FREE trial class!</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn-primary btn-large">Enroll Now</a>
+                    <a href="courses.html" class="btn-secondary btn-large">View Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/logo.png" alt="Education For Muslims" class="footer-logo">
+                    <p>Dedicated to providing quality Islamic education through modern technology, connecting students
+                        with expert tutors worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Noorania Qaida</a></li>
+                        <li><a href="courses.html">Quran Reading</a></li>
+                        <li><a href="courses.html">Tajweed</a></li>
+                        <li><a href="courses.html">Quran Memorization</a></li>
+                        <li><a href="courses.html">Arabic Language</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

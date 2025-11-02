@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable Quran learning packages starting at $40/month. Choose from Basic, Standard, or Intensive plans. One-on-one classes, flexible scheduling, family discounts available.">
+    <meta name="keywords" content="quran classes pricing, online quran fees, affordable islamic education, quran academy packages, monthly plans">
+    <title>Pricing & Packages | Education For Muslims</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div id="registration-popup" class="popup-overlay">
+        <div class="popup-content" data-aos="zoom-in">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-header">
+                <img src="images/logo.png" alt="Education For Muslims" class="popup-logo">
+                <h2>Start Your Quran Journey Today</h2>
+                <p>Join thousands of students learning worldwide</p>
+            </div>
+            <form id="popup-form" class="popup-form">
+                <div class="form-group">
+                    <input type="text" id="popup-name" placeholder="Full Name *" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="popup-email" placeholder="Email Address *" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="popup-phone" placeholder="Phone Number *" required>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group">
+                    <select id="popup-course" required>
+                        <option value="">Select Course *</option>
+                        <option value="noorania">Basic Noorania Qaida</option>
+                        <option value="reading">Quran Reading</option>
+                        <option value="tajweed">Quran with Tajweed</option>
+                        <option value="memorization">Quran Memorization (Hifz)</option>
+                        <option value="tafseer">Quran Translation & Tafseer</option>
+                        <option value="hadith">Hadith Studies</option>
+                        <option value="arabic">Arabic Language</option>
+                        <option value="islamic-studies">Islamic Studies</option>
+                    </select>
+                    <i class="fas fa-book-quran"></i>
+                </div>
+                <button type="submit" class="btn-primary">Get FREE Trial Class</button>
+                <p class="popup-note">No credit card required. Start learning today!</p>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Education For Muslims">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="arabic-accent">الأسعار والباقات</h1>
+                <h2>Packages & Fee Structure</h2>
+                <p>Choose the perfect plan for your Quran learning journey with affordable monthly packages</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Choose Your Learning Plan</h2>
+                <p>Flexible monthly packages designed to fit your schedule and budget</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Plan No 1</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">40</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Basic Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>2 Days</strong> in a Week</li>
+                        <li><i class="fas fa-check"></i> <strong>30 Minutes</strong> Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn-secondary" onclick="openPopup(); return false;">Get Started</a>
+                    <p class="plan-note">Perfect for beginners and casual learners</p>
+                </div>
+
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Plan No 2</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Standard Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>3 Days</strong> in a Week</li>
+                        <li><i class="fas fa-check"></i> <strong>30 Minutes</strong> Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn-primary" onclick="openPopup(); return false;">Get Started</a>
+                    <p class="plan-note">Best value for consistent progress</p>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Plan No 3</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">65</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Intensive Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>5 Days</strong> in a Week</li>
+                        <li><i class="fas fa-check"></i> <strong>30 Minutes</strong> Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn-secondary" onclick="openPopup(); return false;">Get Started</a>
+                    <p class="plan-note">Ideal for serious students and Hifz</p>
+                </div>
+            </div>
+
+            <div class="pricing-note" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-info-circle"></i>
+                <p>All plans include a <strong>FREE trial class</strong> to experience our teaching quality. No credit card required!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-comparison">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Plan Comparison</h2>
+                <p>Compare features across all our learning plans</p>
+            </div>
+            <div class="comparison-table-wrapper" data-aos="fade-up">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Plan No 1<br><span class="price-small">$40/mo</span></th>
+                            <th>Plan No 2<br><span class="price-small">$50/mo</span></th>
+                            <th>Plan No 3<br><span class="price-small">$65/mo</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Classes per Week</td>
+                            <td>2 Days</td>
+                            <td>3 Days</td>
+                            <td>5 Days</td>
+                        </tr>
+                        <tr>
+                            <td>Class Duration</td>
+                            <td>30 Minutes</td>
+                            <td>30 Minutes</td>
+                            <td>30 Minutes</td>
+                        </tr>
+                        <tr>
+                            <td>One-on-One Live Classes</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Certified Tutors</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Progress Report</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Lesson Rescheduling</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Family Discount</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Free Trial Class</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Best For</td>
+                            <td>Beginners</td>
+                            <td>Regular Students</td>
+                            <td>Serious Learners</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="discounts-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Special Discounts & Offers</h2>
+                <p>Save more on your Quran learning journey</p>
+            </div>
+            <div class="discounts-grid">
+                <div class="discount-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="discount-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Discount</h3>
+                    <p class="discount-percent">15% OFF</p>
+                    <p>Enroll 2 or more family members and get 15% discount on total fees. Learn together and grow spiritually as a family.</p>
+                </div>
+                <div class="discount-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="discount-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Referral Bonus</h3>
+                    <p class="discount-percent">$10 Credit</p>
+                    <p>Refer a friend and both of you receive $10 credit towards your next month's tuition. Share the gift of knowledge!</p>
+                </div>
+                <div class="discount-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="discount-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Annual Payment</h3>
+                    <p class="discount-percent">10% OFF</p>
+                    <p>Pay for 12 months upfront and save 10% on your total tuition. Best value for committed learners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Pricing FAQs</h2>
+                <p>Common questions about our pricing and payment</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Do I need to pay for the trial class?</h3>
+                    </div>
+                    <p class="faq-answer">No, the trial class is completely FREE. We want you to experience our teaching quality before making any commitment. No credit card required!</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>What payment methods do you accept?</h3>
+                    </div>
+                    <p class="faq-answer">We accept all major credit cards, debit cards, PayPal, and bank transfers. Payment is secure and processed through encrypted channels.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Can I change my plan later?</h3>
+                    </div>
+                    <p class="faq-answer">Yes! You can upgrade or downgrade your plan at any time. Changes will take effect from the next billing cycle.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Is there a cancellation fee?</h3>
+                    </div>
+                    <p class="faq-answer">No cancellation fees. You can cancel anytime with a 7-day notice. We believe in providing value, not binding contracts.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>What if I miss a class?</h3>
+                    </div>
+                    <p class="faq-answer">Missed classes can be rescheduled at your convenience. We offer flexible rescheduling to accommodate your busy life.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Are there any hidden charges?</h3>
+                    </div>
+                    <p class="faq-answer">Absolutely not! The price you see is the price you pay. No setup fees, no hidden charges, completely transparent pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="money-back">
+        <div class="container">
+            <div class="money-back-content" data-aos="zoom-in">
+                <div class="money-back-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h2>100% Satisfaction Guarantee</h2>
+                <p>We're confident you'll love our teaching quality. If you're not satisfied within the first week, we'll refund your payment with no questions asked. Your satisfaction is our priority!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Begin Your Quran Journey?</h2>
+                <p>Join thousands of students worldwide who are learning the Holy Quran with our expert tutors. Start your spiritual journey today!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Start Learning Now</a>
+                    <a href="contact.html" class="btn-secondary btn-large">Get More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/logo.png" alt="Education For Muslims" class="footer-logo">
+                    <p>Dedicated to providing quality Islamic education through modern technology, connecting students with expert tutors worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Noorania Qaida</a></li>
+                        <li><a href="courses.html">Quran Reading</a></li>
+                        <li><a href="courses.html">Tajweed</a></li>
+                        <li><a href="courses.html">Quran Memorization</a></li>
+                        <li><a href="courses.html">Arabic Language</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

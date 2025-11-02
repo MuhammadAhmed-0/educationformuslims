@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Education For Muslims - Learn Quran Online with Expert Tutors. Master Tajweed, Hifz, Arabic Language, and Islamic Studies with certified scholars. Flexible online classes for all ages.">
+    <meta name="keywords"
+        content="online quran classes, learn quran online, tajweed, hifz, quran memorization, islamic education, arabic language, quran tutor">
+    <meta name="author" content="Education For Muslims">
+    <title>Education For Muslims | Learn Quran Online with Expert Tutors | Tajweed & Hifz Classes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+    <div id="registration-popup" class="popup-overlay">
+        <div class="popup-content" data-aos="zoom-in">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-header">
+                <img src="images/logo.png" alt="Education For Muslims" class="popup-logo">
+                <h2>Start Your Quran Journey Today</h2>
+                <p>Join thousands of students learning worldwide</p>
+            </div>
+            <form id="popup-form" class="popup-form">
+                <div class="form-group">
+                    <input type="text" id="popup-name" placeholder="Full Name *" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="popup-email" placeholder="Email Address *" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="popup-phone" placeholder="Phone Number *" required>
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group">
+                    <select id="popup-course" required>
+                        <option value="">Select Course *</option>
+                        <option value="noorania">Basic Noorania Qaida</option>
+                        <option value="reading">Quran Reading</option>
+                        <option value="tajweed">Quran with Tajweed</option>
+                        <option value="memorization">Quran Memorization (Hifz)</option>
+                        <option value="tafseer">Quran Translation & Tafseer</option>
+                        <option value="hadith">Hadith Studies</option>
+                        <option value="arabic">Arabic Language</option>
+                        <option value="islamic-studies">Islamic Studies</option>
+                    </select>
+                    <i class="fas fa-book-quran"></i>
+                </div>
+                <button type="submit" class="btn-primary">Get FREE Trial Class</button>
+                <p class="popup-note">No credit card required. Start learning today!</p>
+            </form>
+        </div>
+    </div>
+
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Education For Muslims">
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="arabic-accent" style="color:white">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                <h2>Learn the Holy Quran<br>with Expert Tutors</h2>
+                <!-- <p class="hero-subtitle">Master Quran recitation, Tajweed, Hifz, and Islamic knowledge with certified scholars from the comfort of your home</p> -->
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certified Scholars</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Flexible Schedule</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Spiritual Growth</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Book Free Trial
+                        Now</a>
+                    <a href="courses.html" class="btn-secondary btn-large" style="color:white">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="50">0</h3>
+                        <p>Countries Reached</p>
+                        <span class="stat-label">Global presence worldwide</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="5000">0</h3>
+                        <p>Active Students</p>
+                        <span class="stat-label">Students learning worldwide</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="100">0</h3>
+                        <p>Certified Tutors</p>
+                        <span class="stat-label">Expert Islamic scholars</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="98">0</h3>
+                        <p>% Satisfaction</p>
+                        <span class="stat-label">Student satisfaction rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="global-reach">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Spreading Quranic Light Across the Globe</h2>
+                <p>From bustling cities to serene villages, our students are united by their love for the Holy Quran.
+                    Quality Islamic education accessible to everyone, regardless of location.</p>
+            </div>
+            <div class="reach-grid">
+                <div class="reach-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="reach-icon">
+                        <i class="fas fa-earth-americas"></i>
+                    </div>
+                    <h3>Global Reach</h3>
+                    <p>Connecting students worldwide through technology and bringing the Quran to your doorstep</p>
+                </div>
+                <div class="reach-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="reach-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Spiritual Growth</h3>
+                    <p>Nurturing faith and understanding of the Quran through authentic teachings and guidance</p>
+                </div>
+                <div class="reach-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="reach-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Building a global family of Quran learners connected through shared faith and knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-start">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How to Get Started</h2>
+                <p>Begin your Quran learning journey in just a few simple steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Register</h3>
+                    <p>Create your account and provide basic information to get started with your learning journey</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-days"></i>
+                    </div>
+                    <h3>Schedule</h3>
+                    <p>Choose your preferred time and course level that fits your schedule and learning goals</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Start Learning</h3>
+                    <p>Begin your personalized Quran learning journey with expert tutors and achieve your goals</p>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/open_quran_holy_book_516b40b9.jpg" alt="Quran Education">
+                    <div class="about-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Since 2015</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2>Why Learn Quran Online with Education For Muslims is a Better Choice?</h2>
+                    <p class="lead">We are dedicated to providing quality Islamic education through modern technology,
+                        connecting students with expert tutors worldwide.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>Expert Tutors</h4>
+                                <p>Learn from certified Islamic scholars with years of teaching experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <h4>Online Learning</h4>
+                                <p>Study from anywhere in the world with our advanced online platform</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Flexible Schedule</h4>
+                                <p>Choose your preferred time slots that fit your busy lifestyle</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Spiritual Growth</h4>
+                                <p>Deepen your connection with Allah through proper Quranic education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Courses</h2>
+                <p>Comprehensive Quran learning programs designed for students of all levels</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_516b40b9.jpg" alt="Basic Noorania Qaida">
+                        <div class="course-overlay">
+                            <a href="courses.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Basic Noorania Qaida</h3>
+                        <p>Master Arabic alphabets, pronunciation, and reading fluency with expert guidance and
+                            interactive lessons.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Arabic Alphabet Recognition</li>
+                            <li><i class="fas fa-check"></i> Pronunciation Practice</li>
+                            <li><i class="fas fa-check"></i> Reading Fluency</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3-4 Months</span>
+                            <a href="courses.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="images/muslim_student_readi_6002a467.jpg" alt="Online Quran Reading">
+                        <div class="course-overlay">
+                            <a href="courses.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Online Quran Reading</h3>
+                        <p>Learn to read the Quran with clarity and confidence through certified teachers and
+                            interactive lessons.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Certified Teachers</li>
+                            <li><i class="fas fa-check"></i> Interactive Lessons</li>
+                            <li><i class="fas fa-check"></i> Step-by-step Approach</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4-6 Months</span>
+                            <a href="courses.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="images/open_quran_holy_book_f055af00.jpg" alt="Quran With Tajweed">
+                        <div class="course-overlay">
+                            <a href="courses.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Quran With Tajweed</h3>
+                        <p>Perfect your Quranic recitation with proper Tajweed rules, real-time feedback, and expert
+                            instruction.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Tailored Lessons</li>
+                            <li><i class="fas fa-check"></i> Real-time Feedback</li>
+                            <li><i class="fas fa-check"></i> Expert Instructors</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 6-8 Months</span>
+                            <a href="courses.html" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="courses.html" class="btn-secondary btn-large">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Packages & Fee Structure</h2>
+                <p>Choose the perfect plan for your Quran learning journey</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Plan No 1</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">40</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Basic Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 2 Days in a Week</li>
+                        <li><i class="fas fa-check"></i> 30 Minutes Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-secondary">View Details</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Plan No 2</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Standard Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 3 Days in a Week</li>
+                        <li><i class="fas fa-check"></i> 30 Minutes Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-primary">View Details</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Plan No 3</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">65</span>
+                            <span class="period">/ Month</span>
+                        </div>
+                        <p class="plan-subtitle">Intensive Learning Plan</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 Days in a Week</li>
+                        <li><i class="fas fa-check"></i> 30 Minutes Each Class</li>
+                        <li><i class="fas fa-check"></i> One to One Live Class</li>
+                        <li><i class="fas fa-check"></i> Top Rated Teacher</li>
+                        <li><i class="fas fa-check"></i> Family Discount Available</li>
+                        <li><i class="fas fa-check"></i> Monthly Progress Report</li>
+                        <li><i class="fas fa-check"></i> Flexible Lesson Rescheduling</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Students Say About Us</h2>
+                <p>Hear from our satisfied students who have experienced the excellence of Education For Muslims</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Quran learning program has transformed my understanding of the
+                        Quran. The structured approach and excellent instructors made learning enjoyable and effective.
+                        Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ahmed Ali</h4>
+                            <p>Student from USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best Quran academy I've experienced! The teachers are patient,
+                        knowledgeable, and truly care about your progress. My Tajweed has improved significantly in just
+                        a few months."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">F</div>
+                        <div class="author-info">
+                            <h4>Fatima Khan</h4>
+                            <p>Student from UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent platform for learning the Quran online. The flexible schedule
+                        allows me to balance my studies with work. The one-on-one attention is invaluable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Y</div>
+                        <div class="author-info">
+                            <h4>Yusuf Rahman</h4>
+                            <p>Student from Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="platforms">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Learn From Anywhere in the World</h2>
+                <p>We use the most advanced and reliable online learning platforms to bring quality Quran education
+                    directly to your home</p>
+            </div>
+            <div class="platforms-grid">
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="platform-icon">
+                        <i class="fab fa-skype"></i>
+                    </div>
+                    <h3>Zoom</h3>
+                    <p>HD video calls with screen sharing and interactive whiteboard</p>
+                </div>
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google Meet</h3>
+                    <p>Seamless integration with Google Workspace for easy access</p>
+                </div>
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="platform-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Teams</h3>
+                    <p>Professional meeting platform with advanced collaboration tools</p>
+                </div>
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="platform-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Secure messaging and voice calls for quick communication</p>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                <p class="platforms-cta">Choose your preferred platform and start your Quran learning journey today!</p>
+                <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Start Learning Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Begin Your Quran Journey?</h2>
+                <p>Join thousands of students worldwide who are learning the Holy Quran with our expert tutors. Start
+                    your spiritual journey today!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary btn-large" onclick="openPopup(); return false;">Start Learning
+                        Now</a>
+                    <a href="contact.html" class="btn-secondary btn-large">Get More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/logo.png" alt="Education For Muslims" class="footer-logo">
+                    <p>Dedicated to providing quality Islamic education through modern technology, connecting students
+                        with expert tutors worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Noorania Qaida</a></li>
+                        <li><a href="courses.html">Quran Reading</a></li>
+                        <li><a href="courses.html">Tajweed</a></li>
+                        <li><a href="courses.html">Quran Memorization</a></li>
+                        <li><a href="courses.html">Arabic Language</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
