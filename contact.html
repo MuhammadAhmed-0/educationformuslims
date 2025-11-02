@@ -22,6 +22,33 @@
 </head>
 
 <body>
+
+    <!-- ======= Top Bar ======= -->
+    <div class="top-contact-bar">
+        <div class="contact-info">
+            <span>
+                <img src="https://flagcdn.com/pk.svg" alt="Pakistan Flag" class="flag" />
+                <a href="https://wa.me/923150700775" target="_blank" class="whatsapp-link">
+                    +92 315 0700775
+                </a>
+            </span>
+            <span>
+                <img src="https://flagcdn.com/au.svg" alt="Australia Flag" class="flag" />
+                <a href="https://wa.me/61468146882" target="_blank" class="whatsapp-link">
+                    +61 468 146 882
+                </a>
+            </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/efm786" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/efmonlineislamic/" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <a href="contact.html" class="cta-btn">GET YOUR FREE TRIAL</a>
+    </div>
+    <!-- ======= End Top Bar ======= -->
+
     <div id="registration-popup" class="popup-overlay">
         <div class="popup-content" data-aos="zoom-in">
             <button class="popup-close" onclick="closePopup()">&times;</button>
@@ -75,7 +102,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                    <li><a href="contact.html" class="btn-enroll">Enroll Now</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
                     <span></span>
@@ -110,7 +137,12 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Call Us</h3>
-                    <p class="info-detail">+1 (555) 123-4567</p>
+                    <p class="info-detail">
+                        <a href="https://wa.me/923150700775" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            +92 315 0700775
+                        </a>
+                    </p>
                     <p class="info-time">Mon-Sun: 24/7 Available</p>
                 </div>
                 <div class="info-card" data-aos="fade-up" data-aos-delay="200">
@@ -118,7 +150,12 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>Email Us</h3>
-                    <p class="info-detail">info@educationformuslims.com</p>
+                    <p class="info-detail">
+                        <a href="mailto:educationformuslim1@gmail.com" style="text-decoration: none; color: inherit;">
+                            educationformuslim1@gmail.com
+                        </a>
+                    </p>
+
                     <p class="info-time">We respond within 24 hours</p>
                 </div>
                 <div class="info-card" data-aos="fade-up" data-aos-delay="300">
@@ -126,7 +163,14 @@
                         <i class="fas fa-gift"></i>
                     </div>
                     <h3>Free Trial</h3>
-                    <p class="info-detail">Book a 30-minute session</p>
+                    <p class="info-detail">
+                        <a href="https://wa.me/923150700775?text=I%E2%80%99m%20interested%20in%20starting%20my%20free%20trial.%20Please%20share%20the%20details."
+                            target="_blank" style="text-decoration: none; color: inherit;">
+                            Book a 30-minute session
+                        </a>
+                    </p>
+
+
                     <p class="info-time">Experience our teaching quality</p>
                 </div>
                 <div class="info-card" data-aos="fade-up" data-aos-delay="400">
@@ -178,100 +222,93 @@
 
 
                 <div class="contact-form-wrapper" data-aos="fade-left">
-<form id="contact-form" class="contact-form">
-    <div class="form-row">
-        <div class="form-group">
-            <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone">
-    </div>
-    <div class="form-row">
-        <div class="form-group">
-            <label for="country">Country *</label>
-            <select id="country" name="country" required>
-                <option value="">Select Country</option>
-                <option value="USA">United States</option>
-                <option value="UK">United Kingdom</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Pakistan">Pakistan</option>
-                <option value="India">India</option>
-                <option value="UAE">UAE</option>
-                <option value="Saudi Arabia">Saudi Arabia</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="age">Age Group</label>
-            <select id="age" name="age">
-                <option value="">Select Age Group</option>
-                <option value="5-12">5-12 years</option>
-                <option value="13-17">13-17 years</option>
-                <option value="18-25">18-25 years</option>
-                <option value="26-35">26-35 years</option>
-                <option value="36-50">36-50 years</option>
-                <option value="50+">50+ years</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="course">Course Interest *</label>
-        <select id="course" name="course" required>
-            <option value="">Select Course</option>
-            <option value="Quran Reading">Quran Reading</option>
-            <option value="Tajweed">Tajweed</option>
-            <option value="Hifz">Hifz Memorization</option>
-            <option value="Arabic">Arabic Language</option>
-            <option value="Islamic Studies">Islamic Studies</option>
-            <option value="Not Sure">Not Sure</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="level">Current Level</label>
-        <select id="level" name="level">
-            <option value="">Select Your Level</option>
-            <option value="Beginner">Beginner (No prior knowledge)</option>
-            <option value="Basic">Basic (Know Arabic alphabet)</option>
-            <option value="Intermediate">Intermediate (Can read Quran)</option>
-            <option value="Advanced">Advanced (Know Tajweed)</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="schedule">Preferred Schedule</label>
-        <select id="schedule" name="schedule">
-            <option value="">Select Schedule</option>
-            <option value="Morning">Morning (6AM-12PM)</option>
-            <option value="Afternoon">Afternoon (12PM-6PM)</option>
-            <option value="Evening">Evening (6PM-12AM)</option>
-            <option value="Flexible">Flexible</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="message">Additional Information</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-    </div>
-    <div class="form-group checkbox-group">
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Subscribe to our newsletter for Islamic education updates</label>
-    </div>
-    <div class="form-group checkbox-group">
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the <a href="#">Terms and Conditions</a> *</label>
-    </div>
-    <button type="submit" class="btn-primary btn-large">Send Message</button>
-</form>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="USA">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="India">India</option>
+                                    <option value="UAE">UAE</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Enter your city" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interest *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select Course</option>
+                                <option value="Quran Reading">Quran Reading</option>
+                                <option value="Tajweed">Tajweed</option>
+                                <option value="Hifz">Hifz Memorization</option>
+                                <option value="Arabic">Arabic Language</option>
+                                <option value="Islamic Studies">Islamic Studies</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="level">Current Level</label>
+                            <select id="level" name="level">
+                                <option value="">Select Your Level</option>
+                                <option value="Beginner">Beginner (No prior knowledge)</option>
+                                <option value="Basic">Basic (Know Arabic alphabet)</option>
+                                <option value="Intermediate">Intermediate (Can read Quran)</option>
+                                <option value="Advanced">Advanced (Know Tajweed)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="schedule">Preferred Schedule</label>
+                            <select id="schedule" name="schedule">
+                                <option value="">Select Schedule</option>
+                                <option value="Morning">Morning (6AM-12PM)</option>
+                                <option value="Afternoon">Afternoon (12PM-6PM)</option>
+                                <option value="Evening">Evening (6PM-12AM)</option>
+                                <option value="Flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for Islamic education updates</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms and Conditions</a> *</label>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large">Send Message</button>
+                    </form>
 
 
 
@@ -367,11 +404,11 @@
                     <p>Dedicated to providing quality Islamic education through modern technology, connecting students
                         with expert tutors worldwide.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/efm786"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/efmonlineislamic/"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                        <a href="https://wa.me/923150700775"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
@@ -397,19 +434,46 @@
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
                     <h3>Contact Info</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="https://wa.me/923150700775" target="_blank"
+                                style="text-decoration: none; color: inherit;">
+                                +92 315 0700775
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:educationformuslim1@gmail.com"
+                                style="text-decoration: none; color: inherit;">
+                                educationformuslim1@gmail.com
+                            </a>
+                        </li>
+
                         <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
                         <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a
-                        href="#">Terms of Service</a></p>
+                <p>
+                    &copy; 2026 Education For Muslims. All rights reserved. |
+                    <!-- <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> | -->
+                    Designed by <a href="https://empiredigisol.com/" target="_blank">
+                        Empire Digisol
+                    </a>
+                </p>
             </div>
+
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button (Right Bottom) -->
+    <a href="https://wa.me/923150700775?text=Hi%20I%20am%20interested%20to%20start%20Free%20Trial"
+        class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>

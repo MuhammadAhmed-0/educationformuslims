@@ -17,6 +17,89 @@
     --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
 }
 
+
+/* ========== TOP CONTACT BAR ========== */
+.top-contact-bar {
+    width: 100%;
+    background: #f9961c; /* Gold color */
+    color: #3d5a80;      /* Primary dark blue */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.09);
+    flex-wrap: wrap;
+}
+
+/* Contact info with flags */
+.top-contact-bar .contact-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-contact-bar .contact-info span {
+    margin-right: 28px;
+    display: inline-flex;
+    align-items: center;
+}
+.top-contact-bar .flag {
+    width: 28px;
+    height: 18px;
+    margin-right: 7px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    object-fit: cover;
+}
+
+/* WhatsApp clickable numbers */
+.top-contact-bar .whatsapp-link {
+    color: #3d5a80;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+
+/* Social icons */
+.top-contact-bar .social-icons {
+    display: flex;
+    align-items: center;
+}
+.top-contact-bar .social-icons a {
+    color: #3d5a80;
+    margin-right: 18px;
+    font-size: 1.22em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.top-contact-bar .social-icons a:last-child {
+    margin-right: 0;
+}
+.top-contact-bar .social-icons a:hover {
+    color: #ee6c4d; /* Accent color on hover */
+}
+
+/* CTA Button */
+.top-contact-bar .cta-btn {
+    background: none;
+    border: 2px solid #3d5a80;
+    color: #3d5a80;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+}
+.top-contact-bar .cta-btn:hover {
+    background: #3d5a80;
+    color: #fff;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -994,7 +1077,7 @@ body {
 }
 
 .social-links a:hover {
-    background: var(--secondary-color);
+  
     transform: translateY(-3px);
 }
 
@@ -1574,6 +1657,35 @@ body {
     color: var(--primary-color);
 }
 
+/* Floating WhatsApp Button - Right Bottom */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
 @media (max-width: 968px) {
     .nav-menu {
         position: fixed;
@@ -1655,5 +1767,42 @@ body {
     .faq-grid,
     .levels-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 900px) {
+    .top-contact-bar {
+        padding: 12px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .top-contact-bar .contact-info {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-contact-bar {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .top-contact-bar .contact-info {
+        justify-content: center;
+    }
+    .top-contact-bar .cta-btn,
+    .top-contact-bar .social-icons {
+        display: none;
+    }
+    .top-contact-bar .contact-info span {
+        margin-right: 12px;
+        font-size: 0.95rem;
+    }
+    .top-contact-bar .flag {
+        width: 22px;
+        height: 14px;
     }
 }

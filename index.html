@@ -24,6 +24,33 @@
 
 <body>
 
+    <!-- ======= Top Bar ======= -->
+    <div class="top-contact-bar">
+        <div class="contact-info">
+            <span>
+                <img src="https://flagcdn.com/pk.svg" alt="Pakistan Flag" class="flag" />
+                <a href="https://wa.me/923150700775" target="_blank" class="whatsapp-link">
+                    +92 315 0700775
+                </a>
+            </span>
+            <span>
+                <img src="https://flagcdn.com/au.svg" alt="Australia Flag" class="flag" />
+                <a href="https://wa.me/61468146882" target="_blank" class="whatsapp-link">
+                    +61 468 146 882
+                </a>
+            </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/efm786" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/efmonlineislamic/" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <a href="contact.html" class="cta-btn">GET YOUR FREE TRIAL</a>
+    </div>
+    <!-- ======= End Top Bar ======= -->
+
+    <!-- ======= Registration Popup ======= -->
     <div id="registration-popup" class="popup-overlay">
         <div class="popup-content" data-aos="zoom-in">
             <button class="popup-close" onclick="closePopup()">&times;</button>
@@ -32,19 +59,29 @@
                 <h2>Start Your Quran Journey Today</h2>
                 <p>Join thousands of students learning worldwide</p>
             </div>
+
             <form id="popup-form" class="popup-form">
                 <div class="form-group">
                     <input type="text" id="popup-name" placeholder="Full Name *" required>
                     <i class="fas fa-user"></i>
                 </div>
+
                 <div class="form-group">
                     <input type="email" id="popup-email" placeholder="Email Address *" required>
                     <i class="fas fa-envelope"></i>
                 </div>
+
                 <div class="form-group">
                     <input type="tel" id="popup-phone" placeholder="Phone Number *" required>
                     <i class="fas fa-phone"></i>
                 </div>
+
+                <!-- ✅ NEW FIELD: Country -->
+                <div class="form-group">
+                    <input type="text" id="popup-country" placeholder="Country *" required>
+                    <i class="fas fa-globe"></i>
+                </div>
+
                 <div class="form-group">
                     <select id="popup-course" required>
                         <option value="">Select Course *</option>
@@ -59,11 +96,13 @@
                     </select>
                     <i class="fas fa-book-quran"></i>
                 </div>
+
                 <button type="submit" class="btn-primary">Get FREE Trial Class</button>
                 <p class="popup-note">No credit card required. Start learning today!</p>
             </form>
         </div>
     </div>
+
 
 
     <nav class="navbar" id="navbar">
@@ -78,7 +117,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="btn-enroll" onclick="openPopup(); return false;">Enroll Now</a></li>
+                    <li><a href="contact.html" class="btn-enroll">Enroll Now</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
                     <span></span>
@@ -575,11 +614,11 @@
                     <p>Dedicated to providing quality Islamic education through modern technology, connecting students
                         with expert tutors worldwide.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/efm786"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/efmonlineislamic/"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+                        <a href="https://wa.me/923150700775"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
@@ -605,19 +644,45 @@
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
                     <h3>Contact Info</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@educationformuslims.com</li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="https://wa.me/923150700775" target="_blank"
+                                style="text-decoration: none; color: inherit;">
+                                +92 315 0700775
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:educationformuslim1@gmail.com"
+                                style="text-decoration: none; color: inherit;">
+                                educationformuslim1@gmail.com
+                            </a>
+                        </li>
+
                         <li><i class="fas fa-clock"></i> Mon-Sun: 24/7 Available</li>
                         <li><i class="fas fa-map-marker-alt"></i> Online Worldwide</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Education For Muslims. All rights reserved. | <a href="#">Privacy Policy</a> | <a
-                        href="#">Terms of Service</a></p>
+                <p>
+                    &copy; 2026 Education For Muslims. All rights reserved. |
+                    <!-- <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> | -->
+                    Designed by <a href="https://empiredigisol.com/" target="_blank">
+                        Empire Digisol
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
+    <!-- WhatsApp Floating Button (Right Bottom) -->
+    <a href="https://wa.me/923150700775?text=Hi%20I%20am%20interested%20to%20start%20Free%20Trial"
+        class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
