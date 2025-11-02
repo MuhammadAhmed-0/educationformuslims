@@ -22,14 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'ma4126403@gmail.com';     // your Gmail address
-        $mail->Password   = 'whghphjlrxjsvedh';        // your 16-character Gmail App Password
+        $mail->Username   = 'yourgmail';     // your Gmail address
+        $mail->Password   = 'apppassword';        // your 16-character Gmail App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // === EMAIL HEADERS ===
-        $mail->setFrom('ma4126403@gmail.com', 'Education For Muslims');
-        $mail->addAddress('ma4126403@gmail.com'); // where you’ll receive all messages
+        $mail->setFrom('ma41264073@gmail.com', 'Education For Muslims');
+        $mail->addAddress('ma41256403@gmail.com'); // where you’ll receive all messages
 
         // === DETECT FORM SOURCE ===
         $source  = $_POST['source'] ?? 'Website Form';
